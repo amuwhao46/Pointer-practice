@@ -44,6 +44,7 @@ int main()
     cout << "Height: " << height << endl;
     
     cout << "Volume: " << 3.14 * (baseRadius) * (baseRadius) << endl;
+
     cout << "Surface area: " << 2 * 3.14 * (baseRadius) * (height) << endl;
 
     // Show application close
