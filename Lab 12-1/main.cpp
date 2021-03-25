@@ -30,18 +30,19 @@ int main()
     // Formaula
     baseRadius = new double;
     *baseRadius = 1.5;
+    delete baseRadius;
     height = new double;
     *height = 2 * (*baseRadius);
     baseRadius = new double;
     *baseRadius = 4.0;
     delete baseRadius;
-    delete height;
+
     
     // Output to display
-    cout << "Radius of the base: " << baseRadius << endl;
-    cout << "Height: " << height << endl;
-    cout << "Volume: " << 3.14 * (baseRadius) * (baseRadius) << endl;
-    cout << "Surface area: " << 2 * 3.14 * (baseRadius) * (height) << endl;
+    cout << "Radius of the base: " << *baseRadius << endl;
+    cout << "Height: " << *height << endl;
+    cout << "Volume: " << 3.14 * (*baseRadius) * (*baseRadius) << endl;
+    cout << "Surface area: " << 2 * 3.14 * (*baseRadius) * (*height) << endl;
 
 }
 
